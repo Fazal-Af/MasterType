@@ -1,0 +1,127 @@
+.app {
+  text-align: center;
+  width: 100vw;
+  /* height: 100vh; */
+  margin: auto;
+}
+
+.content {
+  text-align: justify;
+  margin: 2rem auto;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  background-color: var(--main-color-varient);
+  color: var(--white-color);
+}
+.input {
+  display: inline-block;
+  width: 40%;
+  height: 8vh;
+  margin-top: 2rem;
+  background-color: var(--main-color-varient);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.has-background-success {
+  background-color: green;
+}
+.has-background-danger {
+  background-color: red;
+}
+.button {
+  width: 10vw;
+  height: 7vh;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: var(--main-color-varient);
+  box-shadow: var(--box-shadow);
+  font-size: 1rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+.button:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--main-color);
+}
+.to-home-btn {
+  float: left;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: transparent;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+.to-home-btn:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.section {
+  width: var(--container-lg);
+  margin: auto;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.is-size-5 {
+  background-color: var(--main-color-varient);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.is-size-1 {
+  color: var(--tomato-color);
+  font-size: 2.5rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  width: max-content;
+  margin: auto;
+}
+.has-test-contered {
+  margin-top: 1rem;
+}
+.has-text-primary {
+  margin-top: 1rem;
+}
+
+.heading {
+  background: red;
+  color: white;
+  width: 25vw;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+
+/* =====================================Medium Device ======================= */
+
+@media screen and (max-width: 1024px) {
+  .section {
+    width: var(--container-md);
+  }
+  .button {
+    width: 13vw;
+    height: 5vh;
+    margin-top: 2rem;
+  }
+}
+
+/* =========================================Small Device ======================= */
+
+@media screen and (max-width: 600px) {
+  .section {
+    width: var(--container-sm);
+  }
+  .is-size-5 {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

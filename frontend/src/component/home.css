@@ -1,0 +1,103 @@
+.nav-bar {
+  width: 100vw;
+  height: 12vh;
+  position: absolute;
+  background-color:rgba(1, 20, 1, 0.356);
+  z-index: 99;
+}
+.nav-links {
+  width: 20%;
+  height: 12vh;
+  color: var(--white-color);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar span {
+  color: var(--white-color);
+  text-transform: uppercase;
+  background-color: var(--main-color-varient);
+  padding: 0.5rem 2rem;
+  margin-left: 1rem;
+  color: var(--primary-color);
+  border-radius: 1rem;
+  animation: color;
+  border: 1px solid var(--primary-color);
+}
+
+.nav-bar span:hover {
+  background-color: var(--primary-color);
+  color: var(--main-color);
+}
+
+.home-container {
+  background-color: rgba(1, 20, 1, 0.601);
+  background-image: url("../images/home.jpg");
+  background-blend-mode: darken;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  
+  /* position: absolute; */
+}
+.home-intro-container {
+  width: 50%;
+  margin: auto;
+  color: aqua;
+  text-align: justify;
+  position: relative;
+  top: calc(35%);
+  background-color:rgba(1, 20, 1, 0.356);
+  padding: 2vh 2vw;
+  border-radius: 1rem;
+}
+.home-container .home-intro-container h1 {
+  color: var(--tomato-color);
+  position: relative;
+  left: calc(35%);
+  margin-bottom: 3vh;
+}
+.select-options{
+  background-color: transparent;
+  width: 10vw;
+  height: 5vh;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 1rem ;
+}
+.select-options option{
+  background-color: var(--main-color);
+}
+
+/* ====================================medium device ================== */
+
+
+@media screen and (max-width:1024px) {
+  .home-container {
+    width: 100vw;
+    height: 100vh;
+   position: absolute;
+  }
+}
+
+/* ====================================medium device ================== */
+
+
+@media screen and (max-width:600px) {
+  .home-intro-container {
+    width: 80%;
+    margin: auto;
+    color: aqua;
+    text-align: justify;
+    position: relative;
+  }
+  .home-container .home-intro-container h1 {
+
+    left: calc(25%);
+
+  }
+  
+}
